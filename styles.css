@@ -1,0 +1,315 @@
+:root {
+	font-size: 12px;
+}
+
+body {
+	background-color: #FFFFFF;
+	margin: 0;
+	min-height: 100vh;
+	color: #0C0E11;
+	font-family:"Montserrat";
+	position: relative;
+	padding-bottom: 1.8rem;
+	font-size: 1rem;
+}
+
+@font-face {
+    font-family: "Butler";
+    src: url("/font/butler")
+}
+
+main {
+	display: flex;
+	background-color: #FFFFFF;
+	margin: 5px 80px 0px;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: #000000;
+}
+
+header #menu {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 1rem;
+}
+
+header #menu a {
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	font-size: 12px;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 1px 20px 0px;
+	background-color: #000000;
+}
+
+header #menu a + a {
+	margin-left: 8px;
+}
+
+
+.contenedor-redes {
+	margin-right: 70px;
+}
+
+.contenedor-principal {
+	background-image: url("images/imagen-principal-index.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.contenedor-flex {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+    position: relative;
+}
+
+.contenedor-logo {
+	display: flex;
+	justify-content: flex-start;
+	flex-basis: 20%;
+	padding-left:70px;
+	position: absolute;
+	margin-top: 80px;
+}
+
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	flex-basis: 100%;
+	padding-right: 70px;
+	margin-top: 40px;
+}
+ 
+nav ul {
+	list-style-type: none;
+	padding-left: 5px;
+	display: flex;
+	flex-direction: row;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-family: "Montserrat";
+	font-size: 16px;
+	color: #FFFFFF;
+	padding: 4px;
+	display: flex;
+	flex-basis: auto;
+}
+
+nav ul li + li {
+	margin-left: 2rem;
+}
+
+nav ul li a:hover {
+	color: #9B6D37;
+}
+
+.grid-layout {
+	display: grid;
+	grid-gap: 10px;
+	align-items: stretch;
+}
+
+.grid-testimonios {
+	display: grid;
+	grid-gap: 20px;
+	/*grid-template-columns: 1fr 2fr;*/
+	grid-template-columns :minmax(auto, 1fr) 1fr 2fr;
+	grid-template-rows: 3fr 1fr;
+	/*grid-template-columns: 80px 200px auto 120px;*/
+	padding: 5px;
+}
+
+
+
+.grid-testimonios section {
+	background-color: #E9E9E9;
+}
+.testimonios1 {
+	grid-column: 1 / 4;
+	grid-row: 1;
+}
+
+.testimonios3 img {
+	width: auto;
+}
+
+
+footer {
+	margin-top: 1rem;
+	background-color: #000000;
+	color: #fff;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+}
+
+#contenedor-footer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.footer-izquierda {
+	flex-basis: 33.33%;
+	padding-top: 10px;
+	padding-left: 70px;
+}
+
+.footer-centro {
+	flex-basis: 33.33%;
+}
+
+.footer-derecha {
+	flex-basis: 33.33%;
+	padding-top: 10px;
+	padding-right: 70px;
+}
+
+
+ul {
+	list-style: none;
+}
+
+#menufooter li a {
+	display: inline;
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	font-size: 11px;
+	text-decoration: none;
+}
+
+#menufooter li + li {
+	margin-bottom: 2px;
+}
+
+#menufooter li a:hover {
+	color: #9B6D37;
+}
+
+.suscripcion {
+	text-align: right;
+}
+
+.redes-footer {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 1rem;
+}
+
+.redes-footer a + a {
+	margin-left: 1rem;
+}
+
+
+
+/*Texto*/
+
+h1 {
+	color: #FFFFFF ;
+	font-family: butler;
+	font-size: 60px;
+	text-align: right;
+	margin-right: 70px;
+	margin-top: 180px;
+}
+
+h2 {
+	color: #9B6D37;
+	text-transform: lowercase;
+	font-family: "Butler";
+	font-size: 20px;
+
+}
+
+.dondeencontrarnos h2 {
+	font-size: 18px;
+	margin: 5px;
+}
+
+.copyright p {
+	padding-top: 1rem;
+}
+
+.newsletter h2 {
+	text-align: right;
+	font-size: 18px;
+	margin: 5px;
+}
+
+.newsletter p {
+	color: #FFFFFF;
+	font-weight: lighter;
+	text-transform: lowercase;
+	font-size: 12px;
+	text-align: right;
+}
+
+
+.dondeencontrarnos p {
+	font-weight: lighter;
+	text-transform: lowercase;
+	font-size: 12px;
+}
+
+.testimonios {
+	margin: 150px;
+	padding-top: 5px;
+}
+
+.texto-testimonios {
+	font-family: "Montserrat";
+	font-weight: 200;
+	color: #000000;
+	font-size: 12px;
+}
+
+.nombres-testimonios {
+	text-align: center;
+	font-family: "Butler";
+	font-size: 14px;
+	color: #9B6D37;
+	padding-top: 20px;
+}
+
+.copyright {
+	font-size: 11px;
+}
+
+
+
+/*Botones*/
+
+.frase-index button {
+	background-color: #9B6D37;
+	font-family: Montserrat;
+	color: #FFFFFF;
+	margin-top: 2px;
+	border: 2px solid #9B6D37;
+	position: absolute;
+	right: 70px;
+}
+
+.newsletter button {
+	background-color: #FFFFFF;
+	font-family: Montserrat;
+	color: #000000;
+	border: 2px solid #FFFFFF ;
+}
+
+button a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
