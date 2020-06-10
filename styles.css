@@ -5,3 +5,14 @@
 }
 
 
+.item {
+    opacity: .8;
+}
+
+.item.featured {
+    grid-column: span 3;
+}
+
+.hoverable:hover {
+    opacity: 1;
+}
